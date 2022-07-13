@@ -67,6 +67,12 @@ dependencies {
     implementation("androidx.room:room-ktx:$roomVersion")
     kapt("androidx.room:room-compiler:$roomVersion")
 
+    // Retrofit
+    val retrofitVersion = "2.9.0"
+    implementation("com.squareup.retrofit2:retrofit:$retrofitVersion")
+    implementation("com.squareup.retrofit2:converter-moshi:$retrofitVersion")
+    implementation("com.squareup.okhttp3:logging-interceptor:4.9.0")
+
     // Moxy
     val moxyVersion = "2.2.2"
     implementation("com.github.moxy-community:moxy:$moxyVersion")
