@@ -1,4 +1,4 @@
-package com.sector.weatherapp.di
+package com.sector.weatherapp.di.module
 
 import android.content.Context
 import com.sector.weatherapp.presentation.App
