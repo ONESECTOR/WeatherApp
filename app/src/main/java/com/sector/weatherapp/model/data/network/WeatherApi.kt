@@ -9,9 +9,9 @@ interface WeatherApi {
     companion object {
         const val API_PATH = "/v1/current.json?key="
         const val API_KEY = "25d056d1828e4517b77151353221307"
+        const val CITY = "Volgograd"
     }
 
-    @GET("$API_PATH$API_KEY&q=Volgograd&aqi=no")
-    suspend fun getWeatherApi(): Response<WeatherData>
-
+    @GET("$API_PATH$API_KEY&q=$CITY&aqi=no")
+    suspend fun loadWeather(): Response<WeatherData>
 }

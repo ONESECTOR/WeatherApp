@@ -15,7 +15,8 @@ import kotlinx.parcelize.Parcelize
 @JsonClass(generateAdapter = true)
 class WeatherData(
     //val current: Current,
-    @Embedded
+
+    @Json(name = "location")
     val location: Location
 ): Parcelable
 
@@ -50,14 +51,22 @@ class Current(
 ): Parcelable*/
 
 @Keep
-@Parcelize
 @Entity
+@Parcelize
 @JsonClass(generateAdapter = true)
 class Location(
     @PrimaryKey
     @Json(name = "id")
     @ColumnInfo(name = "id")
     var id: Int = 0,
+
+    @Json(name = "name")
+    @ColumnInfo(name = "name")
+    val name: String,
+
+    /*@Json(name = "region")
+    @ColumnInfo(name = "region")
+    val region: String,
 
     @Json(name = "country")
     @ColumnInfo(name = "country")
@@ -67,29 +76,21 @@ class Location(
     @ColumnInfo(name = "lat")
     val lat: Double,
 
-    @Json(name = "localtime")
-    @ColumnInfo(name = "localtime")
-    val localtime: String,
+    @Json(name = "lon")
+    @ColumnInfo(name = "lon")
+    val lon: Double,
+
+    @Json(name = "tz_id")
+    @ColumnInfo(name = "tzId")
+    val tzId: String,
 
     @Json(name = "localtime_epoch")
     @ColumnInfo(name = "localtimeEpoch")
     val localtimeEpoch: Int,
 
-    @Json(name = "lon")
-    @ColumnInfo(name = "lon")
-    val lon: Double,
-
-    @Json(name = "name")
-    @ColumnInfo(name = "name")
-    val name: String,
-
-    @Json(name = "region")
-    @ColumnInfo(name = "region")
-    val region: String,
-
-    @Json(name = "tz_id")
-    @ColumnInfo(name = "tzId")
-    val tzId: String
+    @Json(name = "localtime")
+    @ColumnInfo(name = "localtime")
+    val localtime: String,*/
 ): Parcelable
 
 /*

@@ -16,13 +16,26 @@ class RootPresenter @Inject constructor(
     override fun onFirstViewAttach() {
         super.onFirstViewAttach()
         load()
+        get()
     }
 
     private fun load() {
         scope.launch {
             val weather = weatherInteractor.loadWeather()
-            Log.d("respoo", weather.toString())
+            Log.d("getting", weather.toString())
         }
     }
 
+
+    private fun get() {
+        scope.launch {
+            val get = weatherInteractor.loadWeather().let {
+                if(it.isSuccessful) {
+                    Log.d("getting", it.body()?.location!!.name)
+                } else {
+                    Log.d("getting", "error suka")
+                }
+            }
+        }
+    }
 }

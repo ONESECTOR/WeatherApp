@@ -3,13 +3,14 @@ package com.sector.weatherapp.di.provider
 import androidx.room.Database
 import androidx.room.RoomDatabase
 import com.sector.weatherapp.entity.db.Location
+import com.sector.weatherapp.entity.db.WeatherData
 import com.sector.weatherapp.model.WeatherDao
 
 @Database(
     entities = [
         Location::class
     ],
-    version = 2,
+    version = 5,
     exportSchema = false
 )
 abstract class DatabaseProvider: RoomDatabase() {
