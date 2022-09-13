@@ -15,21 +15,12 @@ class RootPresenter @Inject constructor(
 
     override fun onFirstViewAttach() {
         super.onFirstViewAttach()
-        load()
-        get()
+        getCity()
     }
 
-    private fun load() {
+    private fun getCity() {
         scope.launch {
-            val weather = weatherInteractor.loadWeather()
-            Log.d("getting", weather.toString())
-        }
-    }
-
-
-    private fun get() {
-        scope.launch {
-            val get = weatherInteractor.loadWeather().let {
+            val response = weatherInteractor.loadWeather("Hamburg").let {
                 if(it.isSuccessful) {
                     Log.d("getting", it.body()?.location!!.name)
                 } else {

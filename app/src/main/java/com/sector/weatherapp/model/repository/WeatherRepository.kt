@@ -10,5 +10,5 @@ interface WeatherRepository {
     //suspend fun saveLocation(location: Location)
 
     // Network
-    suspend fun loadWeather(): Response<WeatherData>
+    suspend fun loadWeather(city: String): Response<WeatherData>
 }
