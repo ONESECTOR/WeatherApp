@@ -1,7 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="black">#000000</color>
+    <color name="black">#252525</color>
+    <color name="black_new">#333</color>
     <color name="white">#FFFFFF</color>
-
     <color name="transparent">#00000000</color>
+
+    <color name="primary">#7165e3</color>
+    <color name="primary_light">#8b80f8</color>
+    <color name="primary_dark">#2a2d40</color>
+
+    <color name="green">#7fe4ef</color>
+
+    <color name="gray_dark">#808080</color>
+    <color name="gray">#D9D9D9</color>
+
+    <color name="purple_shape">#8176ee</color>
 </resources>

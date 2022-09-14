@@ -7,6 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import com.sector.weatherapp.R
 import com.sector.weatherapp.databinding.FragmentRootBinding
+import com.sector.weatherapp.extensions.addSystemTopPadding
 import com.sector.weatherapp.presentation.presenter.root.RootPresenter
 import com.sector.weatherapp.presentation.view.root.RootView
 import com.sector.weatherapp.ui.common.BaseFragment
@@ -36,7 +37,7 @@ class RootFragment : BaseFragment<FragmentRootBinding>(), RootView {
         super.onViewCreated(view, savedInstanceState)
 
         binding?.apply {
-
+            root.addSystemTopPadding()
         }
     }
 }

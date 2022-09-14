@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name" translatable="false">WeatherApp</string>
+
+    <!-- Common -->
+
+
+    <!-- Root Fragment -->
+    <string name="root_forecast">FORECAST</string>
+    <string name="root_forecast_detailed_week">Detailed weather forecast for this week</string>
 </resources>

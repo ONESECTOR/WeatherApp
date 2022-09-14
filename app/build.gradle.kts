@@ -19,7 +19,6 @@ android {
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
-
     buildTypes {
         release {
             isMinifyEnabled = false
@@ -36,6 +35,11 @@ android {
     buildFeatures {
         viewBinding = true
     }
+    /*repositories {
+        mavenCentral()
+        maven(url = "https://jitpack.io")
+        maven(url = "com.github.Dimezis:BlurView:version-2.0.2")
+    }*/
 }
 
 dependencies {
