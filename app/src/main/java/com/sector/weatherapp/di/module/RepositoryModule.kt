@@ -2,8 +2,8 @@ package com.sector.weatherapp.di.module
 
 import com.sector.weatherapp.di.provider.DatabaseProvider
 import com.sector.weatherapp.model.data.network.WeatherApi
-import com.sector.weatherapp.model.repository.WeatherRepository
-import com.sector.weatherapp.model.repository.WeatherRepositoryImpl
+import com.sector.weatherapp.model.repository.weather.WeatherRepository
+import com.sector.weatherapp.model.repository.weather.WeatherRepositoryImpl
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn

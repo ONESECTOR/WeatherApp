@@ -1,7 +1,7 @@
 package com.sector.weatherapp.di.module
 
 import com.sector.weatherapp.model.interactor.WeatherInteractor
-import com.sector.weatherapp.model.repository.WeatherRepository
+import com.sector.weatherapp.model.repository.weather.WeatherRepository
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
