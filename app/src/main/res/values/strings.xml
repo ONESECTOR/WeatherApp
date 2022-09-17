@@ -7,4 +7,9 @@
     <!-- Root Fragment -->
     <string name="root_forecast">FORECAST</string>
     <string name="root_forecast_detailed_week">Detailed weather forecast for this week</string>
+
+    <!-- Onboarding -->
+    <string name="onboarding_hello_get_started">Get Started</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
