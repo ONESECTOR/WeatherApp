@@ -9,6 +9,9 @@ buildscript {
         val safeArgs = "2.4.2"
         classpath("androidx.navigation:navigation-safe-args-gradle-plugin:$safeArgs")
     }
+    repositories {
+        mavenCentral()
+    }
 }
 
 plugins {
