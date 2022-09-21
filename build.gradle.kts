@@ -1,7 +1,7 @@
 buildscript {
     dependencies {
         classpath("com.android.tools.build:gradle:4.2.2")
-        classpath("com.google.gms:google-services:4.3.13")
+        classpath("com.google.gms:google-services:4.3.14")
 
         val hilt = "2.39.1"
         classpath("com.google.dagger:hilt-android-gradle-plugin:$hilt")
